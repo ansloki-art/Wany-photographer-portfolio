@@ -1,4 +1,3 @@
-// Kategori untuk tombol filter galeri.
 export const categories = [
   "Semua",
   "Wedding",
@@ -8,21 +7,25 @@ export const categories = [
   "Dokumentasi",
 ];
 
-// 🔑 Tambah foto? Cukup tambah satu object. Galeri & filter auto-update.
 export const photos = [
   {
-    src: "/portfolio/wedding-01.jpg",
+    src: "/portfolio.jpg",
     category: "Wedding",
-    alt: "Sesi wedding Andini & Fauzan",
+    alt: "Sesi wedding",
   },
   {
-    src: "/portfolio/prewedding-01.jpg",
+    src: "/portfolio1.jpg",
     category: "Prewedding",
-    alt: "Prewedding di pantai",
+    alt: "Sesi prewedding",
   },
   {
-    src: "/portfolio/wisuda-01.jpg",
+    src: "/portfolio2.jpeg",
     category: "Wisuda",
     alt: "Sesi wisuda",
+  },
+  {
+    src: "/portfolio3.jpeg",
+    category: "Engagement",
+    alt: "Sesi engagement",
   },
 ];

@@ -8,7 +8,7 @@ export default function Portfolio() {
     return (
         <section id="portfolio" className="bg-stone-950 py-24 scroll-mt-24 border-t border-stone-800">
             <div className="max-w-5xl mx-auto px-6">
-                <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#C99BA1" }}>
+                <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#D4C5A9" }}>
           Karya
         </p>
         <h2 className="font-serif text-4xl font-bold text-stone-100 mb-10">
@@ -21,7 +21,7 @@ export default function Portfolio() {
               onClick={() => setActive(cat)}
               className={`px-4 py-1.5 text-sm transition-colors ${
                 active === cat
-                  ? "bg-[#C99BA1] text-stone-950"
+                  ? "bg-[#D4C5A9] text-stone-950"
                   : "border border-stone-700 text-stone-400 hover:border-stone-400"
               }`}
             >

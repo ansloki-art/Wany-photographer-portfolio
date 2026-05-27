@@ -2,7 +2,7 @@ export default function About() {
     return (
       <section id="about" className="bg-stone-950 py-24 scroll-mt-24 border-t border-stone-800">
         <div className="max-w-5xl mx-auto px-6">
-            <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#C99BA1" }}>
+            <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#D4C5A9" }}>
                 Tentang Saya
             </p>
             <h2 className="font-serif text-4xl font-bold text-stone-100 mb-8">
