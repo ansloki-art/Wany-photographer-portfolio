@@ -8,7 +8,7 @@ export default function Services() {
     return (
     <section id="services" className="bg-stone-950 py-24 scroll-mt-24 border-t border-stone-800">
        <div className="max-w-5xl mx-auto px-6">
-        <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#D4C5A9" }}>
+        <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#C9A84C" }}>
           Layanan
         </p>
         <h2 className="font-serif text-4xl font-bold text-stone-100 mb-10">
@@ -21,7 +21,7 @@ export default function Services() {
               onClick={() => setActive(s.category)}
               className={`px-4 py-1.5 text-sm transition-colors ${
                 active === s.category
-                  ? "bg-[#D4C5A9] text-stone-950"
+                  ? "bg-[#C9A84C] text-stone-950"
                   : "border border-stone-700 text-stone-400 hover:border-stone-400"
               }`}
             >
@@ -30,21 +30,33 @@ export default function Services() {
           ))}
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {activeService.packages.map((pkg) => (
-            <div key={pkg.name} className="border border-stone-800 bg-stone-900 p-6">
-              <p className="text-xs tracking-[0.2em] uppercase text-stone-500 mb-2">Paket</p>
-              <h3 className="font-serif text-2xl font-bold text-stone-100 mb-2">{pkg.name}</h3>
-              <p className="text-2xl font-bold mb-6" style={{ color: "#D4C5A9" }}>{pkg.price}</p>
-              <ul className="space-y-2">
-                {pkg.includes.map((item) => (
-                  <li key={item} className="text-sm text-stone-400 flex gap-2">
-                    <span style={{ color: "#D4C5A9" }}>✓</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {activeService.packages.map((pkg) => {
+            const waText = encodeURIComponent(`Halo Bg Wany, saya tertarik dengan Paket ${pkg.name} - ${activeService.category} (${pkg.price}). Boleh info lebih lanjut untuk pembayaran DP atau Cash?`);
+            return (
+              <div key={pkg.name} className="border border-stone-800 bg-stone-900 p-6 flex flex-col">
+                <p className="text-xs tracking-[0.2em] uppercase text-stone-500 mb-2">Paket</p>
+                <h3 className="font-serif text-2xl font-bold text-stone-100 mb-2">{pkg.name}</h3>
+                <p className="text-2xl font-bold mb-6" style={{ color: "#C9A84C" }}>{pkg.price}</p>
+                <ul className="space-y-2 flex-1">
+                  {pkg.includes.map((item) => (
+                    <li key={item} className="text-sm text-stone-400 flex gap-2">
+                      <span style={{ color: "#C9A84C" }}>✓</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href={`https://wa.me/+6282267451998?text=${waText}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 block text-center px-4 py-2.5 text-sm font-medium tracking-widest uppercase transition-opacity hover:opacity-80"
+                  style={{ backgroundColor: "#C9A84C", color: "#0c0a09" }}
+                >
+                  Pesan Paket
+                </a>
+              </div>
+            );
+          })}
         </div>
        </div>
     </section>

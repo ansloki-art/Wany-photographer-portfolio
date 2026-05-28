@@ -11,9 +11,9 @@ export default function App() {
     <div className="bg-stone-950">
       <Navbar />
       <Hero />
-      <About />
       <Services />
       <Portfolio />
+       <About />
       <Contact />
       <Footer />
     </div>

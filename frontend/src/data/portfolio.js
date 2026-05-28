@@ -28,4 +28,14 @@ export const photos = [
     category: "Engagement",
     alt: "Sesi engagement",
   },
+  {
+    src: "/landscape1.jpeg",
+    category: "Prewedding",
+    alt: "Sesi prewedding",
+  },
+  {
+    src: "/landscape2.jpeg",
+    category: "Prewedding",
+    alt: "Sesi prewedding",
+  },
 ];
