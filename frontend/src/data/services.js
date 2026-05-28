@@ -109,6 +109,40 @@ export const services = [
     ],
   },
   {
+    category: "Wisuda",
+    packages: [
+      {
+        name: "Basic",
+        price: "Rp 500.000",
+        includes: [
+          "20 lembar foto edit",
+          "Moment keluarga, pasangan, sendiri & post",
+          "Durasi foto 1 jam",
+        ],
+      },
+      {
+        name: "Premium",
+        price: "Rp 700.000",
+        includes: [
+          "40 lembar foto edit",
+          "Moment keluarga, pasangan, sendiri & post",
+          "Durasi foto 1 jam",
+          "Gratis cetak 12 inc + Bingkai",
+        ],
+      },
+      {
+        name: "Exclusive",
+        price: "Rp 1.000.000",
+        includes: [
+          "20 lembar foto edit",
+          "Moment keluarga, pasangan, sendiri & post",
+          "Video cinematic 1 menit",
+          "Durasi foto 1 jam",
+        ],
+      },
+    ],
+  },
+  {
     category: "Aqiqah",
     packages: [
       {
