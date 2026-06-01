@@ -3,10 +3,10 @@ import { useState } from "react";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
     const links = [
-        { label: "Tentang", href: "#about" },
         { label: "Layanan", href: "#services" },
         { label: "Portfolio", href: "#portfolio" },
         { label: "Jadwal", href: "#schedule" },
+        { label: "Tentang", href: "#about" },
         { label: "Kontak", href: "#contact" },
         ];
 
