@@ -6,8 +6,9 @@ export default function Navbar() {
         { label: "Tentang", href: "#about" },
         { label: "Layanan", href: "#services" },
         { label: "Portfolio", href: "#portfolio" },
+        { label: "Jadwal", href: "#schedule" },
         { label: "Kontak", href: "#contact" },
-    ];
+        ];
 
     return (
         <nav className="sticky top-0 z-50 bg-stone-950/90 backdrop-blur border-b border-stone-800">
