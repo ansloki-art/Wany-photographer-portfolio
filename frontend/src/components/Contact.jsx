@@ -2,7 +2,7 @@ export default function Contact() {
     return (
         <section id="contact" className="bg-stone-950 py-24 scroll-mt-24 border-t border-stone-800">
             <div className="max-w-5xl mx-auto px-6 text-center">
-                <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6" style={{ color: "#C9A84C" }}>
+                <p className="text-xs font-medium tracking-[0.2em] uppercase mb-6 text-[#C9A84C]">
                     Booking
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-stone-100 mb-6">
@@ -16,8 +16,7 @@ export default function Contact() {
                         href="https://wa.me/+6282267451998"
                         target="_blank"
                         rel="noreferrer"
-                        className="px-6 py-2.5 text-sm font-medium tracking-widest uppercase hover:opacity-80 transition-opacity"
-                        style={{ backgroundColor: "#C9A84C", color: "#0c0a09" }}
+                        className="px-6 py-2.5 text-sm font-medium tracking-widest uppercase bg-[#C9A84C] text-stone-950 hover:opacity-80 transition-opacity"
                     >
                         WhatsApp
                     </a>
